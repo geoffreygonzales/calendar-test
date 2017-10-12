@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Ib Calendar Data Source-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JournalViewController" customModule="Honeydew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJx-Pf-d26" userLabel="Calendar Container">
+                                <rect key="frame" x="47.5" y="338" width="280" height="329"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktI-jC-Wbo">
+                                        <rect key="frame" x="18" y="23" width="244" height="266"/>
+                                        <subviews>
+                                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RBi-uM-wKg">
+                                                <rect key="frame" x="0.0" y="0.0" width="244" height="25"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-vD-2XW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MA-aB-3hx">
+                                                        <rect key="frame" x="35" y="0.0" width="34.5" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol3-5q-Ppf">
+                                                        <rect key="frame" x="69.5" y="0.0" width="35" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6E-xA-u3A">
+                                                        <rect key="frame" x="104.5" y="0.0" width="35" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-sz-kXs">
+                                                        <rect key="frame" x="139.5" y="0.0" width="35" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrT-BI-3FU">
+                                                        <rect key="frame" x="174.5" y="0.0" width="34.5" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDt-Qu-vQ9">
+                                                        <rect key="frame" x="209" y="0.0" width="35" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="czC-65-EO6" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                                <rect key="frame" x="0.0" y="31" width="244" height="231"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="231" id="FWZ-7N-3EV"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sOw-QN-FUX">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCell" id="BS6-Bg-cXe" customClass="CalendarCell" customModule="Honeydew" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq8-hZ-afP">
+                                                                    <rect key="frame" x="14.5" y="13" width="21" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                                    <color key="textColor" red="0.34010043042304328" green="0.34346776141733082" blue="0.34346776141733082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Hq8-hZ-afP" firstAttribute="centerX" secondItem="BS6-Bg-cXe" secondAttribute="centerX" id="3oM-pg-B0k"/>
+                                                            <constraint firstItem="Hq8-hZ-afP" firstAttribute="centerY" secondItem="BS6-Bg-cXe" secondAttribute="centerY" id="OZt-xU-jny"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="dateLabel" destination="Hq8-hZ-afP" id="DDj-Fr-HpV"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="ibCalendarDataSource" destination="BYZ-38-t0r" id="Bc7-6E-eSg"/>
+                                                    <outlet property="ibCalendarDelegate" destination="BYZ-38-t0r" id="BV0-5v-4X4"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="czC-65-EO6" firstAttribute="leading" secondItem="ktI-jC-Wbo" secondAttribute="leading" id="7SN-ne-OQB"/>
+                                            <constraint firstItem="RBi-uM-wKg" firstAttribute="top" secondItem="ktI-jC-Wbo" secondAttribute="top" id="7j8-Sr-Xmx"/>
+                                            <constraint firstItem="czC-65-EO6" firstAttribute="top" secondItem="RBi-uM-wKg" secondAttribute="bottom" constant="6" id="A3k-x8-Xjz"/>
+                                            <constraint firstAttribute="height" constant="266" id="Q58-hw-nA9"/>
+                                            <constraint firstAttribute="trailing" secondItem="RBi-uM-wKg" secondAttribute="trailing" id="XNB-Yo-FDm"/>
+                                            <constraint firstAttribute="bottom" secondItem="czC-65-EO6" secondAttribute="bottom" constant="4" id="eY1-kP-T6N"/>
+                                            <constraint firstItem="RBi-uM-wKg" firstAttribute="leading" secondItem="ktI-jC-Wbo" secondAttribute="leading" id="tNn-mS-IEJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="czC-65-EO6" secondAttribute="trailing" id="zAW-xE-cwf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ktI-jC-Wbo" firstAttribute="leading" secondItem="rJx-Pf-d26" secondAttribute="leading" constant="18" id="5WF-d5-rfE"/>
+                                    <constraint firstAttribute="height" constant="329" id="9LA-aZ-sfX"/>
+                                    <constraint firstAttribute="width" constant="280" id="Cj6-1V-BAS"/>
+                                    <constraint firstAttribute="trailing" secondItem="ktI-jC-Wbo" secondAttribute="trailing" constant="18" id="P4y-NR-vD4"/>
+                                    <constraint firstAttribute="bottom" secondItem="ktI-jC-Wbo" secondAttribute="bottom" constant="40" id="T0O-fv-tgc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9n-qR-334" userLabel="Calenar Dismiss Button">
+                                <rect key="frame" x="282" y="0.0" width="93" height="96"/>
+                                <color key="backgroundColor" red="0.79150606069999996" green="1" blue="0.70153960420000006" alpha="0.4414865154109589" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Whe-cV-2s4"/>
+                                    <constraint firstAttribute="width" constant="93" id="cdL-DW-nUb"/>
+                                </constraints>
+                                <state key="normal" title="hide">
+                                    <color key="titleColor" red="0.44632376269035534" green="0.44632376269035534" blue="0.44632376269035534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideCalendar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yR-1W-xvq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hP6-SA-wcj">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="103"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="0.38112692636986301" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="3QN-9Q-UQy"/>
+                                    <constraint firstAttribute="width" constant="106" id="jFf-VD-Q7Z"/>
+                                </constraints>
+                                <state key="normal" title="show">
+                                    <color key="titleColor" red="0.43718274111675126" green="0.43718274111675126" blue="0.43718274111675126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCalendar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHE-xQ-TBD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVZ-cl-hwY">
+                                <rect key="frame" x="0.0" y="200" width="150" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="MsA-89-igk"/>
+                                    <constraint firstAttribute="width" constant="150" id="jt1-VG-fPJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.92848852119021374" blue="0.9930356267615067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fVZ-cl-hwY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AKF-UJ-cSP"/>
+                            <constraint firstItem="hP6-SA-wcj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F3P-m2-RWa"/>
+                            <constraint firstItem="rJx-Pf-d26" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="G2n-Fs-AFu"/>
+                            <constraint firstItem="hP6-SA-wcj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="New-B0-Wa4"/>
+                            <constraint firstItem="U9n-qR-334" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QX9-9I-qr2"/>
+                            <constraint firstItem="fVZ-cl-hwY" firstAttribute="top" secondItem="hP6-SA-wcj" secondAttribute="bottom" constant="97" id="eEX-1g-0N4"/>
+                            <constraint firstItem="U9n-qR-334" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qfG-rC-ovP"/>
+                            <constraint firstItem="rJx-Pf-d26" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCw-08-KZF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarBackground" destination="ktI-jC-Wbo" id="HVy-W3-fSa"/>
+                        <outlet property="calendarButton" destination="hP6-SA-wcj" id="2TF-AT-vvo"/>
+                        <outlet property="calendarContainer" destination="rJx-Pf-d26" id="xHz-db-3EZ"/>
+                        <outlet property="calendarDismissButton" destination="U9n-qR-334" id="2i0-Op-2kD"/>
+                        <outlet property="calendarView" destination="czC-65-EO6" id="8Ao-Pm-zgi"/>
+                        <outlet property="label" destination="fVZ-cl-hwY" id="LXf-ja-tVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="115.14084507042254"/>
+        </scene>
+    </scenes>
+</document>

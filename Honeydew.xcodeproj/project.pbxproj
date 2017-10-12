@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		774931951F88443400D1898C /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774931941F88443400D1898C /* CalendarCell.swift */; };
+		77AE4B321F859CEE00E082CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE4B311F859CEE00E082CB /* AppDelegate.swift */; };
+		77AE4B341F859CEE00E082CB /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE4B331F859CEE00E082CB /* JournalViewController.swift */; };
+		77AE4B371F859CEE00E082CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77AE4B351F859CEE00E082CB /* Main.storyboard */; };
+		77AE4B391F859CEE00E082CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AE4B381F859CEE00E082CB /* Assets.xcassets */; };
+		77AE4B3C1F859CEE00E082CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77AE4B3A1F859CEE00E082CB /* LaunchScreen.storyboard */; };
+		77AE4B471F859CEE00E082CB /* HoneydewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE4B461F859CEE00E082CB /* HoneydewTests.swift */; };
+		77AE4B521F859CEE00E082CB /* HoneydewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE4B511F859CEE00E082CB /* HoneydewUITests.swift */; };
+		77DE35721F89237D0062E13D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE35711F89237D0062E13D /* CalendarView.swift */; };
+		88FFEFD3746C10B611CA1A3E /* Pods_HoneydewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4246A050793AE169BB312EC2 /* Pods_HoneydewUITests.framework */; };
+		8DDBD0A3507F32DC20E5027F /* Pods_Honeydew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731518F89B2BAD27C5D80554 /* Pods_Honeydew.framework */; };
+		E204CD9D3BA71DC2C225EBE5 /* Pods_HoneydewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B927FA2233C10309D11BA6B8 /* Pods_HoneydewTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77AE4B431F859CEE00E082CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77AE4B261F859CEE00E082CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77AE4B2D1F859CEE00E082CB;
+			remoteInfo = Honeydew;
+		};
+		77AE4B4E1F859CEE00E082CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77AE4B261F859CEE00E082CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77AE4B2D1F859CEE00E082CB;
+			remoteInfo = Honeydew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BB2EE57DD01703338D8620 /* Pods-Honeydew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Honeydew.release.xcconfig"; path = "Pods/Target Support Files/Pods-Honeydew/Pods-Honeydew.release.xcconfig"; sourceTree = "<group>"; };
+		07F2B2525F017B684E1C5F85 /* Pods-HoneydewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneydewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoneydewTests/Pods-HoneydewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4246A050793AE169BB312EC2 /* Pods_HoneydewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoneydewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D3AA0FEFF848DD1519F277 /* Pods-HoneydewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneydewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoneydewUITests/Pods-HoneydewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		621C6149A5AD0AC3D08C1A65 /* Pods-Honeydew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Honeydew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Honeydew/Pods-Honeydew.debug.xcconfig"; sourceTree = "<group>"; };
+		731518F89B2BAD27C5D80554 /* Pods_Honeydew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Honeydew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774931941F88443400D1898C /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		77AE4B2E1F859CEE00E082CB /* Honeydew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeydew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AE4B311F859CEE00E082CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77AE4B331F859CEE00E082CB /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		77AE4B361F859CEE00E082CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77AE4B381F859CEE00E082CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77AE4B3B1F859CEE00E082CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77AE4B3D1F859CEE00E082CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77AE4B421F859CEE00E082CB /* HoneydewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneydewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AE4B461F859CEE00E082CB /* HoneydewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneydewTests.swift; sourceTree = "<group>"; };
+		77AE4B481F859CEE00E082CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77AE4B4D1F859CEE00E082CB /* HoneydewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneydewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AE4B511F859CEE00E082CB /* HoneydewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneydewUITests.swift; sourceTree = "<group>"; };
+		77AE4B531F859CEE00E082CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77DE35711F89237D0062E13D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		B927FA2233C10309D11BA6B8 /* Pods_HoneydewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoneydewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D1BCB24D39B98D153C59BF /* Pods-HoneydewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneydewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoneydewTests/Pods-HoneydewTests.release.xcconfig"; sourceTree = "<group>"; };
+		E00318E50EBF692C202F41CE /* Pods-HoneydewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneydewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoneydewUITests/Pods-HoneydewUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77AE4B2B1F859CEE00E082CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDBD0A3507F32DC20E5027F /* Pods_Honeydew.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AE4B3F1F859CEE00E082CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E204CD9D3BA71DC2C225EBE5 /* Pods_HoneydewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AE4B4A1F859CEE00E082CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FFEFD3746C10B611CA1A3E /* Pods_HoneydewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0294333D55001B7AE3699CA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				731518F89B2BAD27C5D80554 /* Pods_Honeydew.framework */,
+				B927FA2233C10309D11BA6B8 /* Pods_HoneydewTests.framework */,
+				4246A050793AE169BB312EC2 /* Pods_HoneydewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77AE4B251F859CEE00E082CB = {
+			isa = PBXGroup;
+			children = (
+				77AE4B301F859CEE00E082CB /* Honeydew */,
+				77AE4B451F859CEE00E082CB /* HoneydewTests */,
+				77AE4B501F859CEE00E082CB /* HoneydewUITests */,
+				77AE4B2F1F859CEE00E082CB /* Products */,
+				D34423C931091B3CB4BA408F /* Pods */,
+				0294333D55001B7AE3699CA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77AE4B2F1F859CEE00E082CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77AE4B2E1F859CEE00E082CB /* Honeydew.app */,
+				77AE4B421F859CEE00E082CB /* HoneydewTests.xctest */,
+				77AE4B4D1F859CEE00E082CB /* HoneydewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77AE4B301F859CEE00E082CB /* Honeydew */ = {
+			isa = PBXGroup;
+			children = (
+				77AE4B681F859E6500E082CB /* Controler */,
+				77AE4B651F859E3E00E082CB /* View */,
+				77AE4B671F859E5E00E082CB /* Model */,
+				77AE4B631F859E0900E082CB /* Supporting Files */,
+			);
+			path = Honeydew;
+			sourceTree = "<group>";
+		};
+		77AE4B451F859CEE00E082CB /* HoneydewTests */ = {
+			isa = PBXGroup;
+			children = (
+				77AE4B461F859CEE00E082CB /* HoneydewTests.swift */,
+				77AE4B481F859CEE00E082CB /* Info.plist */,
+			);
+			path = HoneydewTests;
+			sourceTree = "<group>";
+		};
+		77AE4B501F859CEE00E082CB /* HoneydewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77AE4B511F859CEE00E082CB /* HoneydewUITests.swift */,
+				77AE4B531F859CEE00E082CB /* Info.plist */,
+			);
+			path = HoneydewUITests;
+			sourceTree = "<group>";
+		};
+		77AE4B631F859E0900E082CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77AE4B3A1F859CEE00E082CB /* LaunchScreen.storyboard */,
+				77AE4B311F859CEE00E082CB /* AppDelegate.swift */,
+				77AE4B3D1F859CEE00E082CB /* Info.plist */,
+				77AE4B381F859CEE00E082CB /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77AE4B651F859E3E00E082CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77DE35711F89237D0062E13D /* CalendarView.swift */,
+				774931941F88443400D1898C /* CalendarCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		77AE4B671F859E5E00E082CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		77AE4B681F859E6500E082CB /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				77AE4B351F859CEE00E082CB /* Main.storyboard */,
+				77AE4B331F859CEE00E082CB /* JournalViewController.swift */,
+			);
+			name = Controler;
+			sourceTree = "<group>";
+		};
+		D34423C931091B3CB4BA408F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				621C6149A5AD0AC3D08C1A65 /* Pods-Honeydew.debug.xcconfig */,
+				00BB2EE57DD01703338D8620 /* Pods-Honeydew.release.xcconfig */,
+				07F2B2525F017B684E1C5F85 /* Pods-HoneydewTests.debug.xcconfig */,
+				C3D1BCB24D39B98D153C59BF /* Pods-HoneydewTests.release.xcconfig */,
+				57D3AA0FEFF848DD1519F277 /* Pods-HoneydewUITests.debug.xcconfig */,
+				E00318E50EBF692C202F41CE /* Pods-HoneydewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77AE4B2D1F859CEE00E082CB /* Honeydew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77AE4B561F859CEE00E082CB /* Build configuration list for PBXNativeTarget "Honeydew" */;
+			buildPhases = (
+				00BE136084A481CFA07C15A3 /* [CP] Check Pods Manifest.lock */,
+				77AE4B2A1F859CEE00E082CB /* Sources */,
+				77AE4B2B1F859CEE00E082CB /* Frameworks */,
+				77AE4B2C1F859CEE00E082CB /* Resources */,
+				4FFDD6BC6E96192190A173FD /* [CP] Embed Pods Frameworks */,
+				C0A65FE1A2833719F973A44E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Honeydew;
+			productName = Honeydew;
+			productReference = 77AE4B2E1F859CEE00E082CB /* Honeydew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77AE4B411F859CEE00E082CB /* HoneydewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77AE4B591F859CEE00E082CB /* Build configuration list for PBXNativeTarget "HoneydewTests" */;
+			buildPhases = (
+				41728FF8CB08782FC568C8B4 /* [CP] Check Pods Manifest.lock */,
+				77AE4B3E1F859CEE00E082CB /* Sources */,
+				77AE4B3F1F859CEE00E082CB /* Frameworks */,
+				77AE4B401F859CEE00E082CB /* Resources */,
+				9FDB6D93C496D78645997473 /* [CP] Embed Pods Frameworks */,
+				1AE259D7AC24F4FEFC58E8CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77AE4B441F859CEE00E082CB /* PBXTargetDependency */,
+			);
+			name = HoneydewTests;
+			productName = HoneydewTests;
+			productReference = 77AE4B421F859CEE00E082CB /* HoneydewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77AE4B4C1F859CEE00E082CB /* HoneydewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77AE4B5C1F859CEE00E082CB /* Build configuration list for PBXNativeTarget "HoneydewUITests" */;
+			buildPhases = (
+				0A78CC629362B53C1A3CF8A2 /* [CP] Check Pods Manifest.lock */,
+				77AE4B491F859CEE00E082CB /* Sources */,
+				77AE4B4A1F859CEE00E082CB /* Frameworks */,
+				77AE4B4B1F859CEE00E082CB /* Resources */,
+				989999F47605F787DE2DB29B /* [CP] Embed Pods Frameworks */,
+				0A865353097864BBDDC693AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77AE4B4F1F859CEE00E082CB /* PBXTargetDependency */,
+			);
+			name = HoneydewUITests;
+			productName = HoneydewUITests;
+			productReference = 77AE4B4D1F859CEE00E082CB /* HoneydewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77AE4B261F859CEE00E082CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Sunlight;
+				TargetAttributes = {
+					77AE4B2D1F859CEE00E082CB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					77AE4B411F859CEE00E082CB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77AE4B2D1F859CEE00E082CB;
+					};
+					77AE4B4C1F859CEE00E082CB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77AE4B2D1F859CEE00E082CB;
+					};
+				};
+			};
+			buildConfigurationList = 77AE4B291F859CEE00E082CB /* Build configuration list for PBXProject "Honeydew" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77AE4B251F859CEE00E082CB;
+			productRefGroup = 77AE4B2F1F859CEE00E082CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77AE4B2D1F859CEE00E082CB /* Honeydew */,
+				77AE4B411F859CEE00E082CB /* HoneydewTests */,
+				77AE4B4C1F859CEE00E082CB /* HoneydewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77AE4B2C1F859CEE00E082CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AE4B3C1F859CEE00E082CB /* LaunchScreen.storyboard in Resources */,
+				77AE4B391F859CEE00E082CB /* Assets.xcassets in Resources */,
+				77AE4B371F859CEE00E082CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AE4B401F859CEE00E082CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AE4B4B1F859CEE00E082CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00BE136084A481CFA07C15A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Honeydew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A78CC629362B53C1A3CF8A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoneydewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A865353097864BBDDC693AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneydewUITests/Pods-HoneydewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AE259D7AC24F4FEFC58E8CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneydewTests/Pods-HoneydewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41728FF8CB08782FC568C8B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoneydewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FFDD6BC6E96192190A173FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Honeydew/Pods-Honeydew-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Honeydew/Pods-Honeydew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		989999F47605F787DE2DB29B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HoneydewUITests/Pods-HoneydewUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneydewUITests/Pods-HoneydewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDB6D93C496D78645997473 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HoneydewTests/Pods-HoneydewTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneydewTests/Pods-HoneydewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A65FE1A2833719F973A44E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Honeydew/Pods-Honeydew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77AE4B2A1F859CEE00E082CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AE4B341F859CEE00E082CB /* JournalViewController.swift in Sources */,
+				77AE4B321F859CEE00E082CB /* AppDelegate.swift in Sources */,
+				77DE35721F89237D0062E13D /* CalendarView.swift in Sources */,
+				774931951F88443400D1898C /* CalendarCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AE4B3E1F859CEE00E082CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AE4B471F859CEE00E082CB /* HoneydewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AE4B491F859CEE00E082CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AE4B521F859CEE00E082CB /* HoneydewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77AE4B441F859CEE00E082CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77AE4B2D1F859CEE00E082CB /* Honeydew */;
+			targetProxy = 77AE4B431F859CEE00E082CB /* PBXContainerItemProxy */;
+		};
+		77AE4B4F1F859CEE00E082CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77AE4B2D1F859CEE00E082CB /* Honeydew */;
+			targetProxy = 77AE4B4E1F859CEE00E082CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77AE4B351F859CEE00E082CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77AE4B361F859CEE00E082CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77AE4B3A1F859CEE00E082CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77AE4B3B1F859CEE00E082CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77AE4B541F859CEE00E082CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77AE4B551F859CEE00E082CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77AE4B571F859CEE00E082CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621C6149A5AD0AC3D08C1A65 /* Pods-Honeydew.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = Honeydew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = strawberry.asdf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77AE4B581F859CEE00E082CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BB2EE57DD01703338D8620 /* Pods-Honeydew.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = Honeydew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = strawberry.asdf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77AE4B5A1F859CEE00E082CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F2B2525F017B684E1C5F85 /* Pods-HoneydewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = HoneydewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.HoneydewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honeydew.app/Honeydew";
+			};
+			name = Debug;
+		};
+		77AE4B5B1F859CEE00E082CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D1BCB24D39B98D153C59BF /* Pods-HoneydewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = HoneydewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.HoneydewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honeydew.app/Honeydew";
+			};
+			name = Release;
+		};
+		77AE4B5D1F859CEE00E082CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D3AA0FEFF848DD1519F277 /* Pods-HoneydewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = HoneydewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.HoneydewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Honeydew;
+			};
+			name = Debug;
+		};
+		77AE4B5E1F859CEE00E082CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00318E50EBF692C202F41CE /* Pods-HoneydewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = HoneydewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.HoneydewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Honeydew;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77AE4B291F859CEE00E082CB /* Build configuration list for PBXProject "Honeydew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AE4B541F859CEE00E082CB /* Debug */,
+				77AE4B551F859CEE00E082CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77AE4B561F859CEE00E082CB /* Build configuration list for PBXNativeTarget "Honeydew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AE4B571F859CEE00E082CB /* Debug */,
+				77AE4B581F859CEE00E082CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77AE4B591F859CEE00E082CB /* Build configuration list for PBXNativeTarget "HoneydewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AE4B5A1F859CEE00E082CB /* Debug */,
+				77AE4B5B1F859CEE00E082CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77AE4B5C1F859CEE00E082CB /* Build configuration list for PBXNativeTarget "HoneydewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AE4B5D1F859CEE00E082CB /* Debug */,
+				77AE4B5E1F859CEE00E082CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77AE4B261F859CEE00E082CB /* Project object */;
+}
