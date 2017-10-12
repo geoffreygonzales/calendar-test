@@ -1,10 +1,4 @@
-//
-//  JournalViewController.swift
-//  Honeydew
-//
-//  Created by Geoffrey Gonzales on 10/4/17.
-//  Copyright © 2017 Sunlight. All rights reserved.
-//
+
 
 
 import UIKit
