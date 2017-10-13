@@ -24,11 +24,14 @@ extension JournalViewController : JTAppleCalendarViewDelegate, JTAppleCalendarVi
                     // Set Speed Of Animation
                     let animationDuration = 0.08
                     
+                    // Get Screen Height
+                    let screenHeight = UIScreen.main.bounds.height
+                    
                     // Animate Calendar Up To The View
                     UIView.animate(withDuration: animationDuration)
                     {
-                              self.calendarContainer.frame.origin.y -= self.calendarContainer.frame.size.height
-                              self.calendarView.frame.origin.y -= self.calendarContainer.frame.size.height
+                              self.calendarContainer.frame.origin.y = screenHeight - self.calendarContainer.frame.size.height
+                              self.calendarContainer.frame.origin.y = screenHeight - self.calendarContainer.frame.size.height
                     }
                     
                     // Blur Bg
@@ -46,11 +49,14 @@ extension JournalViewController : JTAppleCalendarViewDelegate, JTAppleCalendarVi
                     // Set Speed Of Animation
                     let animationDuration = 0.08
                     
+                    // Get Screen Height
+                    let screenHeight = UIScreen.main.bounds.height
+                    
                     // Animate Down Below Screen
                     UIView.animate(withDuration: animationDuration)
                     {
-                              self.calendarContainer.frame.origin.y += self.calendarContainer.frame.size.height
-                              self.calendarView.frame.origin.y += self.calendarContainer.frame.size.height
+                              self.calendarContainer.frame.origin.y = screenHeight
+                              self.calendarContainer.frame.origin.y = screenHeight
                     }
                     
                     // Unblur

@@ -44,7 +44,7 @@ class JournalViewController: UIViewController//, JTAppleCalendarViewDelegate, JT
                     if calendarIsNotSetup
                     {
                               jumpToToday()
-                              hideCalendar()
+//                              hideCalendar()
                     }
                     
           }
