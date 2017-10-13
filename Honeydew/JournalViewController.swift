@@ -78,7 +78,7 @@ class JournalViewController: UIViewController//, JTAppleCalendarViewDelegate, JT
                     
                     // Run With It And With IT Commented Out
                     // Check Out The Console Too Durring
-                    label.text = ""
+//                    label.text = ""
                     
           }
 }
