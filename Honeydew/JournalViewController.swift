@@ -49,6 +49,8 @@ class JournalViewController: UIViewController//, JTAppleCalendarViewDelegate, JT
                     
           }
           
+          
+          
           override func viewWillAppear(_ animated: Bool)
           {
                     print("—————————— View Will Appear —————————— \n")
