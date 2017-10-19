@@ -31,7 +31,6 @@ extension JournalViewController : JTAppleCalendarViewDelegate, JTAppleCalendarVi
                     UIView.animate(withDuration: animationDuration)
                     {
                               self.calendarContainer.frame.origin.y = screenHeight - self.calendarContainer.frame.size.height
-                              self.calendarContainer.frame.origin.y = screenHeight - self.calendarContainer.frame.size.height
                     }
                     
                     // Blur Bg
@@ -55,7 +54,6 @@ extension JournalViewController : JTAppleCalendarViewDelegate, JTAppleCalendarVi
                     // Animate Down Below Screen
                     UIView.animate(withDuration: animationDuration)
                     {
-                              self.calendarContainer.frame.origin.y = screenHeight
                               self.calendarContainer.frame.origin.y = screenHeight
                     }
                     
