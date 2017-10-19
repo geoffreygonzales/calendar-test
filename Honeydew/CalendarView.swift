@@ -4,6 +4,7 @@
 //
 
 import JTAppleCalendar
+import RealmSwift
 
 extension JournalViewController : JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource
 {
@@ -116,6 +117,69 @@ extension JournalViewController : JTAppleCalendarViewDelegate, JTAppleCalendarVi
                     cell.dateLabel.text = cellState.text
                     
                     // Set Color Of Date On Cell
+                    do
+                    {
+                              let realm = try Realm()
+                              
+                              // Search Journal Entries For Existing Entries With A Matching Date
+                              let entry = realm.objects(Journal.self).filter("fullDate = '\(date.fullDate() ?? "")'").first
+                              
+                              // For The Cell Matching Todays Date
+                              if date.fullDate() == Date().fullDate()
+                              {
+                                        // Setting The Color Of The Day To The BG Color Of The Cell
+                                        if let color = entry?.color
+                                        {
+//                                                  cell.selectedView.isHidden = false
+//                                                  cell.selectedView.backgroundColor = UIColor(named: "\(color)")
+//                                                  cell.dateLabel.textColor = UIColor(named: "white")
+                                                  // Make Todays Date Label Text Bolder
+                                                  
+                                                  return cell
+                                        }
+                                                  
+                                                  // If There Is No Color Of The Day Set Yet
+                                        else
+                                        {
+//                                                  cell.selectedView.isHidden = false
+//                                                  cell.selectedView.backgroundColor = UIColor(named: "lightGrey")
+//                                                  cell.dateLabel.textColor = UIColor(named: "white")
+                                                  // Make Todays Date Label Text Bolder
+                                                  
+                                                  return cell
+                                        }
+                                        
+                              }
+                                        
+                                        // For Cells Not Matching Today
+                              else
+                              {
+//                                        cell.selectedView.isHidden = true
+                                        
+                                        // If A Color Exists, Set It To The Cell Label
+                                        if let color = entry?.color
+                                        {
+//                                                  cell.dateLabel.textColor = UIColor(named: "\(color)")!
+                                                  return cell
+                                        }
+                                                  // If A Color Does Not Exist, Just Return With Default Color
+                                        else
+                                        {
+//                                                  cell.dateLabel.textColor = UIColor(named: "deepDeepDeepGrey")
+                                                  return cell
+                                        }
+                              }
+                    }
+                    catch let error as NSError
+                    {
+                              print("""
+                                        Error Creating An Instance Of Realm For Journal Entry, Or Error Saving Journal Entry To Realm
+                                        There Are 2 try Blocks In This do Funtion
+                                        Error : \(error.localizedDescription)
+                                        """)
+                              
+                              return cell
+                    }
                     
                     return cell
           }
